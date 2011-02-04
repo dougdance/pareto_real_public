@@ -1,0 +1,14 @@
+<div class="column span-24">
+  <h1 id='logo'>
+    <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path %>
+  </h1>
+</div>
+<hr />
+<div class="column span-24">
+  <%= render :partial => "/shared/menu",
+             :locals => {
+               :dom_id => 'menu',
+               :css => 'menu'
+             } -%>
+</div>
+<hr />
